@@ -1,0 +1,8 @@
+server:
+  port: 8210
+spring:
+  application:
+    name: sc-sale-web
+  thymeleaf:
+    cache: false
+    mode: html

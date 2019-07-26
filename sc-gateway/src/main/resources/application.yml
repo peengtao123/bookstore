@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: sc-gateway
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
+zuul:
+  routes:
+    book:
+      path: /book/**
+      serviceId: sc-book-service
+    user:
+      path: /user/**
+      serviceId: sc-user-service

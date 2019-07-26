@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Sale Cloud</title>
+
+        <link rel="stylesheet" th:href="@{/css/index.css}" href="css/index.css" type="text/css" />
+
+        <style>
+            .bookList{
+                margin:0 auto; width:840px; 
+            } 
+            .bookList li{
+                margin-top: 15px; float: left;
+                width:160px;
+            }
+            .bookList li img{
+                width: 120px; 
+            }
+            .bookList li a div{
+                text-align: center;
+            }
+            .bookList li a div span{
+                width:100%; height:120px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div id="header">
+
+            <div class="logo"></div>
+            <div style="margin-top: 100px;"></div>
+
+            <div>
+                <ul class="bookList">
+                    <li th:each="data : ${books}">
+                        <img th:src="${data.coverUrl}" src="images/book.png" />
+                        <div>
+                            <span th:text="${data.name}">疯狂Workflow讲义</span>
+                        </div>
+                        <div>
+                            价格：<span th:text="${data.price}">50</span>
+                        </div>
+                        <div>
+                            作者：<span th:text="${data.author}">杨恩雄</span>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+
+        </div>
+
+    </body>
+</html>
