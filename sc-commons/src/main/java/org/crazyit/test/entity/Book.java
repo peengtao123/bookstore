@@ -14,65 +14,65 @@ public class Book {
 
     @Id
     @GeneratedValue
-	private Integer id;
-	
-	private String name;
-	
-	private String author;
-	
-	private byte[] cover;
-	
-	private BigDecimal price;
-	
-	@Transient
-	private String coverUrl;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private String name;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private String author;
 
-	public String getName() {
-		return name;
-	}
+    private byte[] cover;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    private BigDecimal price;
 
-	public String getAuthor() {
-		return author;
-	}
+    @Transient
+    private String coverUrl;
 
-	public void setAuthor(String author) {
-		this.author = author;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public byte[] getCover() {
-		return cover;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setCover(byte[] cover) {
-		this.cover = cover;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public BigDecimal getPrice() {
-		return price;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
+    public String getAuthor() {
+        return author;
+    }
 
-	public String getCoverUrl() {
-		return coverUrl;
-	}
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-	public void setCoverUrl(String coverUrl) {
-		this.coverUrl = coverUrl;
-	}
-	
+    public byte[] getCover() {
+        return cover;
+    }
+
+    public void setCover(byte[] cover) {
+        this.cover = cover;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public String getCoverUrl() {
+        return coverUrl;
+    }
+
+    public void setCoverUrl(String coverUrl) {
+        this.coverUrl = coverUrl;
+    }
+
 }

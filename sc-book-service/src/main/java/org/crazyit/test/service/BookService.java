@@ -9,16 +9,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BookService {
-	
-	@Autowired
-	private BookDao bookDao;
 
-	public List<Book> findAll() {
-		List<Book> books = bookDao.findAll();
-		return books;
-	}
-	
-	public void save(Book book) {
-		bookDao.save(book);
-	}
+    @Autowired
+    private BookDao bookDao;
+
+    public List<Book> findAll() {
+        List<Book> books = bookDao.findAll();
+        return books;
+    }
+
+    public void save(Book book) {
+        bookDao.save(book);
+    }
 }

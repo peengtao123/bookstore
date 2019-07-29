@@ -8,8 +8,8 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableFeignClients
 public class ManageWebApp {
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(ManageWebApp.class).run(args);
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(ManageWebApp.class).run(args);
+    }
 
 }
